@@ -5,7 +5,7 @@
       v-model="isTabPickerShow"
       :title="title"
       :data="pickerData"
-      data-struct="cascade"
+      data-struct="async"
       ok-text="确认"
       cancel-text="取消"
       :option-render="optionRenders"
@@ -15,7 +15,8 @@
   </div>
 </template>
 
-<script>import {Button, TabPicker} from 'mand-mobile'
+<script>
+import {Button, TabPicker} from 'mand-mobile'
 import pickerData from 'mand-mobile/components/tab-picker/demo/data/cascade'
 
 const NOOP = () => {}
@@ -63,4 +64,5 @@ export default {
     },
   },
 }
-</script>
+
+</script>
